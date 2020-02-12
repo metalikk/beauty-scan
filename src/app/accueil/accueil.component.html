@@ -1,0 +1,55 @@
+<div class=" body">
+
+ <header>
+<div class= head>
+    <h1>beauty scan</h1>
+</div>  
+
+ </header>
+
+
+
+ <div class="truc">
+    <div class="code">
+        <label>
+            Entrez votre code barre:
+            <input type="text" class="form-control"[formControl]= "valeur">
+        </label>
+    </div>
+    
+    <div>
+        <button class='button'(click)= "resultatApi()" >Scannez</button>
+    </div>
+</div> 
+
+<div class="show">
+    <div class="block1">
+        <div class="pic">
+            <img src={{photo}} alt=''>
+        </div>
+        <div class="para">
+            <p> Ingrédients :{{ingredients}} </p>
+            <img class = "bio" src="../../assets/img/{{bio}}" width="10%" alt=''>
+        
+        
+        </div>
+    </div>  
+    <div class="all">
+        <p>Allergenes: {{allergenes}} </p>
+        <p>Additifs: {{additifs}} </p>
+        
+       
+        
+       
+    </div>
+</div>
+
+</div>
+<footer>
+    <div class="container">
+        <p class="">
+            <a  href="../credits/">Crédits</a>
+        </p>
+    </div>
+    <img class ="foot" src="../../assets/img/zen.jpeg">
+</footer>
